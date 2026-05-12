@@ -1,0 +1,112 @@
+.card02 {
+  display: flex;
+  gap: 20px;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+
+  .mySwiper {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .bestCard {
+      max-width: 1600px;
+      width: 100%;
+      /* height: 605px; */
+      border-radius: clamp(3.125rem, 2.575rem + 2.75vw, 5.75rem);
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      border: rgba(255, 255, 255, 0.231) solid 1.5px;
+      margin: 0 auto;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+      }
+
+      .cardBox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        @media (max-width: 700px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .img {
+          width: clamp(18.75rem, 12.197rem + 32.77vw, 50rem);
+          height: clamp(18.75rem, 12.197rem + 32.77vw, 50rem);
+        }
+        .blockOne {
+          border-radius: 92px;
+          padding: clamp(6.25rem, 5.791rem + 2.29vw, 8.438rem) 44px
+            clamp(6.25rem, 5.791rem + 2.29vw, 8.438rem) 0px;
+          display: flex;
+          flex-direction: column;
+          gap: clamp(0.625rem, 0.206rem + 2.1vw, 2.625rem);
+
+          @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+          }
+
+          .title {
+            max-width: 739px;
+            width: 100%;
+            font-weight: 600;
+            font-size: clamp(1.75rem, 1.619rem + 0.66vw, 2.375rem);
+            color: rgba(255, 255, 255, 0.75);
+            padding-top: clamp(0.625rem, 0.101rem + 2.62vw, 3.125rem);
+          }
+          .text {
+            max-width: 748px;
+            width: 100%;
+            font-weight: 600;
+            font-size: clamp(1.125rem, 0.994rem + 0.66vw, 1.75rem);
+            color: rgba(255, 255, 255, 0.75);
+          }
+
+          .blockTwo {
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 28px;
+              color: #fff;
+              background: none;
+              border: solid #fff 2px;
+              padding: 15px 59px;
+              border-radius: 12px;
+              cursor: pointer;
+              transition: 0.5s;
+
+              &:hover {
+                transform: scale(0.9);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

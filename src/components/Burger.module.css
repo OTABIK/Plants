@@ -1,0 +1,52 @@
+.burger {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  min-height: 100dvh;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.5s;
+  z-index: 100;
+
+  &.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  .links {
+    max-width: 300px;
+    width: 100%;
+    background-color: rgb(26, 46, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    .link {
+      font-weight: 600;
+      font-size: 18px;
+      color: #ffffff;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.topSelling {
+  max-width: 2619px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+
+  .container {
+    max-width: 2619px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+    flex-direction: column;
+    background-color: #1b2316;
+
+    .boxTitle {
+      max-width: 478px;
+      width: 100%;
+      height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+
+      .svg {
+        align-self: flex-end;
+      }
+      .svg:nth-of-type(2) {
+        align-self: flex-start;
+      }
+      .subTitle {
+        font-weight: 600;
+        font-size: 48px;
+        color: #fff;
+        text-shadow:
+          0 2px 2px 0 rgba(0, 0, 0, 0.09),
+          0 5px 4px 0 rgba(0, 0, 0, 0.13),
+          0 8px 6px 0 rgba(0, 0, 0, 0.15),
+          0 13px 10px 0 rgba(0, 0, 0, 0.18),
+          0 19px 15px 0 rgba(0, 0, 0, 0.21),
+          0 30px 24px 0 rgba(0, 0, 0, 0.23),
+          0 50px 40px 0 rgba(0, 0, 0, 0.27),
+          0 100px 80px 0 rgba(0, 0, 0, 0.36);
+      }
+    }
+
+    .mySwiper {
+      max-width: 2619px;
+      width: 100%;
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
+      cursor: grab;
+
+      .divCard {
+        /* max-width: clamp(30rem, 29.581rem + 2.1vw, 32rem);
+        width: 100%; */
+        width: clamp(25rem, 23.532rem + 7.34vw, 32rem);
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 77px;
+        fill: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+        gap: 30px;
+        background-color: #35442b;
+        padding: 51px 26px;
+
+        /* .img {
+          width: 459px;
+          height: 459px;
+        } */
+
+        .divInf {
+          align-self: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: clamp(1.688rem, 1.556rem + 0.66vw, 2.313rem);
+
+          .title {
+            font-weight: 400;
+            font-size: clamp(1.75rem, 1.619rem + 0.66vw, 2.375rem);
+            color: rgba(255, 255, 255, 0.75);
+          }
+          .text {
+            font-weight: 400;
+            font-size: clamp(1rem, 0.895rem + 0.52vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.75);
+          }
+          .divCost {
+            width: 372px;
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+
+            .cost {
+              font-weight: 400;
+              font-size: clamp(1.75rem, 1.619rem + 0.66vw, 2.375rem);
+              color: rgba(255, 255, 255, 0.75);
+            }
+
+            .btn {
+              width: 55px;
+              height: 55px;
+              background: none;
+              border: solid rgba(255, 255, 255, 0.75) 2px;
+              border-radius: 12px;
+              padding: 14px;
+              transition: 0.5s;
+
+              &:hover {
+                transform: scale(0.9);
+              }
+            }
+          }
+        }
+
+        .img {
+          /* z-index: 100;
+          position: absolute;
+          bottom: 350px; */
+        }
+      }
+    }
+  }
+}

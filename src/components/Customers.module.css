@@ -1,0 +1,130 @@
+.customers {
+  max-width: 1602px;
+  width: 100%;
+  margin: 0 auto;
+
+  .container {
+    max-width: 1602px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 219px 10px 150px;
+    gap: clamp(6.25rem, 5.175rem + 5.37vw, 11.375rem);
+
+    .boxTitle {
+      max-width: 578px;
+      width: 100%;
+      height: 122px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+
+      .svg {
+        align-self: flex-end;
+      }
+      .svg:nth-of-type(2) {
+        align-self: flex-start;
+      }
+
+      .subTitle {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: clamp(2.5rem, 2.303rem + 0.98vw, 3.438rem);
+        color: #fff;
+        text-shadow:
+          0 2px 2px 0 rgba(0, 0, 0, 0.09),
+          0 5px 4px 0 rgba(0, 0, 0, 0.13),
+          0 8px 6px 0 rgba(0, 0, 0, 0.15),
+          0 13px 10px 0 rgba(0, 0, 0, 0.18),
+          0 19px 15px 0 rgba(0, 0, 0, 0.21),
+          0 30px 24px 0 rgba(0, 0, 0, 0.23),
+          0 50px 40px 0 rgba(0, 0, 0, 0.27),
+          0 100px 80px 0 rgba(0, 0, 0, 0.36);
+
+        @media (max-width: 500px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .mainCard {
+      max-width: 1602px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 33px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+
+      .cardBox {
+        max-width: 450px;
+        width: 100%;
+        height: 480px;
+        border-radius: 77px;
+        fill: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+        padding: 71px 41px 75px 41px;
+        background-color: #35442b;
+
+        .infoBox {
+          display: flex;
+          flex-direction: column;
+          gap: 61px;
+
+          .blockOne {
+            display: flex;
+            gap: 38px;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (max-width: 700px) {
+              flex-direction: column;
+            }
+
+            .blockTwo {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+
+              .useName {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: clamp(1.75rem, 1.619rem + 0.66vw, 2.375rem);
+                color: #fff;
+              }
+
+              .mark {
+                width: clamp(5.625rem, 5.088rem + 2.69vw, 8.188rem);
+                height: clamp(0.938rem, 0.885rem + 0.26vw, 1.188rem);
+              }
+            }
+
+            .img {
+              border-radius: 51px;
+              width: clamp(4.25rem, 3.988rem + 1.31vw, 5.5rem);
+              height: clamp(4.25rem, 3.988rem + 1.31vw, 5.5rem);
+            }
+          }
+
+          .text {
+            width: clamp(16.875rem, 15.132rem + 8.72vw, 25.188rem);
+            font-weight: 400;
+            font-size: clamp(1.188rem, 1.122rem + 0.33vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.75);
+
+            @media (max-width: 500px) {
+              text-align: center;
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

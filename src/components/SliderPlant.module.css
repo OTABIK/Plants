@@ -1,0 +1,80 @@
+.mySwiper {
+  max-width: 512px;
+  width: 100%;
+  /* display: flex;
+  gap: 20px; */
+  /* position: relative; */
+
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .plantCard {
+      max-width: 512px;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      height: clamp(25rem, 21.802rem + 15.99vw, 40.25rem);
+      border-radius: 77px;
+      fill: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+
+      .img {
+        position: absolute;
+        right: 5px;
+        bottom: clamp(8.125rem, 7.863rem + 1.31vw, 9.375rem);
+      }
+      .infCard {
+        max-width: 261px;
+        width: 100%;
+        margin: 50px;
+
+        /* margin: clamp(15.625rem, 13.895rem + 8.65vw, 23.875rem) 179px 84px
+          clamp(1.875rem, 1.325rem + 2.75vw, 4.5rem); */
+
+        .infPart {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          opacity: 0.75;
+
+          @media (max-width: 500px) {
+            align-items: center;
+          }
+
+          .text {
+            font-size: clamp(1rem, 0.948rem + 0.26vw, 1.25rem);
+            color: rgba(255, 255, 255, 0.75);
+          }
+          .title {
+            font-weight: 400;
+            font-size: clamp(1.5rem, 1.356rem + 0.72vw, 2.188rem);
+            color: rgba(255, 255, 255, 0.75);
+          }
+          .btn {
+            width: clamp(12.5rem, 12.277rem + 1.11vw, 13.563rem);
+            height: clamp(3.5rem, 3.395rem + 0.52vw, 4rem);
+
+            border: 2px solid #fff;
+            border-radius: 12px;
+            background: none;
+
+            font-size: clamp(1.5rem, 1.448rem + 0.26vw, 1.75rem);
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}

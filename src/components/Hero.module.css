@@ -1,0 +1,176 @@
+.hero {
+  max-width: 1626px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 58px 45px 0 57px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: 500px) {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1626px;
+    width: 100%;
+    display: flex;
+    gap: clamp(8.125rem, 6.919rem + 6.03vw, 13.875rem);
+
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+    }
+
+    .blockOne {
+      max-width: 899px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 260px;
+
+      @media (max-width: 700px) {
+        gap: 380px;
+      }
+
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 700px) {
+          padding-top: 60px;
+        }
+
+        .title {
+          font-weight: 600;
+          font-size: clamp(2.5rem, 1.478rem + 5.11vw, 7.375rem);
+          color: #fff;
+          opacity: 0.75;
+        }
+        .text {
+          color: #fff;
+          font-size: clamp(0.625rem, 0.455rem + 0.85vw, 1.438rem);
+          opacity: 0.6;
+          margin-bottom: 20px;
+        }
+        .btns {
+          display: flex;
+          gap: 35px;
+
+          .btn {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 28px;
+            color: #fff;
+
+            border: 2px solid #fff;
+            border-radius: 12px;
+            width: 217px;
+            height: 64px;
+            transition: 0.5s;
+            cursor: pointer;
+            background-color: rgba(245, 222, 179, 0);
+            font-size: clamp(1.125rem, 0.994rem + 0.66vw, 1.75rem);
+            opacity: 0.75;
+            text-align: center;
+
+            &:hover {
+              transform: scale(0.9);
+            }
+          }
+          .playBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+
+            .imgBtn {
+              border: 2px solid white;
+              padding: 15px;
+              border-radius: 100%;
+            }
+
+            .liveDemo {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: clamp(0.938rem, 0.872rem + 0.33vw, 1.25rem);
+              color: #fff;
+              opacity: 0.75;
+            }
+          }
+        }
+      }
+
+      .box2 {
+        max-width: 409px;
+        width: 100%;
+        padding: 43px 28px 45px 40px;
+        border-radius: 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        fill: rgba(255, 255, 255, 0.05);
+        /* Блюр заднего фона */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* Обводка как в Figma */
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        /* Чтобы выглядело мягче */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+        .trash {
+          display: flex;
+          gap: 28px;
+          align-items: center;
+
+          /* Блюр заднего фона */
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px); /* для Safari */
+
+          /* Чтобы выглядело мягче */
+          /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); */
+
+          .profName {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: #fff;
+
+            fill: rgba(255, 255, 255, 0.05);
+
+            /* Блюр заднего фона */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            .name {
+              font-weight: 400;
+              font-size: clamp(1.063rem, 0.997rem + 0.33vw, 1.375rem);
+              color: #fff;
+            }
+          }
+        }
+
+        .text {
+          font-size: clamp(0.938rem, 0.911rem + 0.13vw, 1.063rem);
+          color: #fff;
+        }
+      }
+    }
+
+    .blockTwe {
+      max-width: 512px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      /* .plantCard {
+        height: clamp(25rem, 21.802rem + 15.99vw, 40.25rem);
+        border-radius: 77px;
+        fill: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+      } */
+    }
+  }
+}
