@@ -14,14 +14,14 @@ import { useRef } from "react";
 const plantCard = [
   {
     id: 1,
-    image: "/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+    image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
     title: "Trendy House Plant",
     text: "Calathea plant",
     button: "Buy Now",
   },
   // {
   //   id: 2,
-  //   image: "/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+  //   image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
   //   title: "Trendy House Plant",
   //   text: "Calathea plant",
   //   button: "Buy Now",
@@ -29,7 +29,7 @@ const plantCard = [
 
   // {
   //   id: 3,
-  //   image: "/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+  //   image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
   //   title: "Trendy House Plant",
   //   text: "Calathea plant",
   //   button: "Buy Now",
@@ -46,7 +46,7 @@ const SliderPlant = () => {
         <div className={s.plantCard}>
           <img
             className={s.img}
-            src="/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png"
+            src="/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png"
             alt="plant"
           />
           <div className={s.infCard}>
@@ -65,7 +65,7 @@ const SliderPlant = () => {
     //     <SwiperSlide className={s.swiperSlide}>
     //       <div className={s.plantCard}>
     //         <img
-    //           src="/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png"
+    //           src="/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png"
     //           alt="plant"
     //         />
     //         <div className={s.infCard}>
@@ -76,7 +76,7 @@ const SliderPlant = () => {
     //           </div>
     //           {/* <img
     //             className={s.arrow}
-    //             src="/public/right-arrow 1.svg"
+    //             src="/right-arrow 1.svg"
     //             alt="right-arrow"
     //           /> */}
     //         </div>

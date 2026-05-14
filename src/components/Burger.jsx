@@ -12,7 +12,7 @@ const Burger = () => {
       <div className={s.links} onClick={(e) => e.stopPropagation()}>
         <img
           className={s.icon}
-          src="/public/icons8-x-24.png"
+          src="/icons8-x-24.png"
           alt="close"
           onClick={handleBurger}
         />

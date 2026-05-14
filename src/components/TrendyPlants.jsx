@@ -80,7 +80,7 @@ const TrendyPlants = () => {
         <div className={s.plantBlockOne}>
           <img
             className={s.img}
-            src="/public/Rose Gold Feminine Calligraphy Monogram Logo(20) 1.png"
+            src="/Rose Gold Feminine Calligraphy Monogram Logo(20) 1.png"
             alt="Rose"
           />
           <div className={s.infBox}>
@@ -101,7 +101,7 @@ const TrendyPlants = () => {
                 //  onClick={() => alert("you keep this plant!")}
                 className={s.btn}
               >
-                <img src="/public/bag 1.svg" alt="bag" />
+                <img src="/bag 1.svg" alt="bag" />
               </button>
             </div>
           </div>
@@ -110,7 +110,7 @@ const TrendyPlants = () => {
         <div className={s.plantBlockTwo}>
           <img
             className={s.img}
-            src="/public/Rose Gold Feminine Calligraphy Monogram Logo(20) 2.png"
+            src="/Rose Gold Feminine Calligraphy Monogram Logo(20) 2.png"
             alt="Rose"
           />
           <div className={s.infBox}>
@@ -131,7 +131,7 @@ const TrendyPlants = () => {
                 //  onClick={() => alert("you keep this plant!")}
                 className={s.btn}
               >
-                <img src="/public/bag 1.svg" alt="bag" />
+                <img src="/bag 1.svg" alt="bag" />
               </button>
             </div>
           </div>

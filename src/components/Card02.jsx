@@ -8,7 +8,7 @@ const Card02 = () => {
     {
       id: 1,
       image:
-        "/public/Rose ыгзуксге Gold Feminine Calligraphy Monogram Logo(15) 4-cropped.svg",
+        "/Rose ыгзуксге Gold Feminine Calligraphy Monogram Logo(15) 4-cropped.svg",
       tittle: "We Have Small And Best O2 Plants Collection’s",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       extra:
@@ -16,8 +16,7 @@ const Card02 = () => {
     },
     {
       id: 2,
-      image:
-        "/public/Rose Gold Feminine Calligraphy Monogram Logo(15) 3-cropped.svg",
+      image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 3-cropped.svg",
       tittle: "We Have Small And Best O2 Plants Collection’s",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       extra:
@@ -26,7 +25,7 @@ const Card02 = () => {
     {
       id: 3,
       image:
-        "/public/Rose cut Gold Feminine Calligraphy Monogram Logo(15) 2-cropped.svg",
+        "/Rose cut Gold Feminine Calligraphy Monogram Logo(15) 2-cropped.svg",
       tittle: "We Have Small And Best O2 Plants Collection’s",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       extra:
@@ -35,7 +34,7 @@ const Card02 = () => {
     {
       id: 4,
       image:
-        "/public/Rose crot Gold Feminine Calligraphy Monogram Logo(20) 2-cropped.svg",
+        "/Rose crot Gold Feminine Calligraphy Monogram Logo(20) 2-cropped.svg",
       tittle: "We Have Small And Best O2 Plants Collection’s",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       extra:

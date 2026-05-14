@@ -4,25 +4,25 @@ const Customers = () => {
   const ProfInfo = [
     {
       id: 1,
-      logo: "/public/unsplash_3TLl_97HNJo.svg",
+      logo: "/unsplash_3TLl_97HNJo.svg",
       name: "Maxn Raval",
-      stars: "/public/Group 7.svg",
+      stars: "/Group 7.svg",
       about:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
     },
     {
       id: 2,
-      logo: "/public/unsplash_3TLl_97HNJo.svg",
+      logo: "/unsplash_3TLl_97HNJo.svg",
       name: "venely k",
-      stars: "/public/Group 7.svg",
+      stars: "/Group 7.svg",
       about:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
     },
     {
       id: 3,
-      logo: "/public/unsplash_3TLl_97HNJo.svg",
+      logo: "/unsplash_3TLl_97HNJo.svg",
       name: "Lii thakur",
-      stars: "/public/Group 7.svg",
+      stars: "/Group 7.svg",
       about:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
     },

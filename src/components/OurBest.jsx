@@ -79,10 +79,10 @@ const ourBest = () => {
 
         <button className={s.arrowBox}>
           <button className={s.arrow}>
-            <img src="/public/right-arrow 2.svg" alt="left" />
+            <img src="/right-arrow 2.svg" alt="left" />
           </button>
           <button className={s.arrow}>
-            <img src="/public/right-arrow 2.svg" alt="right" />
+            <img src="/right-arrow 2.svg" alt="right" />
           </button>
         </button>
       </div>

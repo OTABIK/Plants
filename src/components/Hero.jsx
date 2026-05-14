@@ -26,21 +26,17 @@ const Hero = () => {
                 target="_blank"
                 href="https://memepedia.ru/ebat-ty-lox/"
               >
-                <img
-                  className={s.imgBtn}
-                  src="/public/Polygon 2.svg"
-                  alt="Polygon"
-                />
+                <img className={s.imgBtn} src="/Polygon 2.svg" alt="Polygon" />
                 <p className={s.liveDemo}>Live Demo...</p>
               </a>
             </div>
           </div>
           <div className={s.box2}>
             <div className={s.trash}>
-              <img src="/public/unsplash_3TLl_97HNJo.svg" alt="hero" />
+              <img src="/unsplash_3TLl_97HNJo.svg" alt="hero" />
               <div className={s.profName}>
                 <h2 className={s.name}>alena Patel</h2>
-                <img src="/public/Group 7.svg" alt="stars" />
+                <img src="/Group 7.svg" alt="stars" />
               </div>
             </div>
 

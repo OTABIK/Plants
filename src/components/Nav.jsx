@@ -29,14 +29,14 @@ const Nav = () => {
         </div>
         <div className={s.more}>
           <Link className={s.icons} to={"/"}>
-            <img src="/public/search-interface-symbol 1.svg" alt="search" />
+            <img src="/search-interface-symbol 1.svg" alt="search" />
           </Link>
           <Link className={s.icons} to={"/Contact"}>
-            <img src="/public/bag 1.svg" alt="search" />
+            <img src="/bag 1.svg" alt="search" />
           </Link>
           <img
             className={s.icons}
-            src="/public/Group 3.svg"
+            src="/Group 3.svg"
             alt="menu"
             onClick={handleBurger}
           />

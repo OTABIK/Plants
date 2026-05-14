@@ -12,42 +12,42 @@ const TopSelling = () => {
   const CardSelling = [
     {
       id: 1,
-      img: "/public/Rose Gold Feminine Calligraphy Monogram Logo(20) 2.png",
+      img: "/Rose Gold Feminine Calligraphy Monogram Logo(20) 2.png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
     },
     {
       id: 2,
-      img: "/public/Rose aaaaGold Feminine Calligraphy Monogram Logo(15) 2 (1).png",
+      img: "/Rose aaaaGold Feminine Calligraphy Monogram Logo(15) 2 (1).png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
     },
     {
       id: 3,
-      img: "/public//Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+      img: "//Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
     },
     {
       id: 4,
-      img: "/public/Rose cccGold Feminine Calligraphy Monogram Logo(15) 2.png",
+      img: "/Rose cccGold Feminine Calligraphy Monogram Logo(15) 2.png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
     },
     {
       id: 5,
-      img: "/public/Rose fffffGold Feminine Calligraphy Monogram Logo(15) 2 (2).png",
+      img: "/Rose fffffGold Feminine Calligraphy Monogram Logo(15) 2 (2).png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
     },
     {
       id: 6,
-      img: "/public/Rose zzzzzGold Feminine Calligraphy Monogram Logo(15) 2 (3).png",
+      img: "/Rose zzzzzGold Feminine Calligraphy Monogram Logo(15) 2 (3).png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",
@@ -171,7 +171,7 @@ const TopSelling = () => {
                   <div className={s.divCost}>
                     <h2 className={s.cost}>{card.cost}</h2>
                     <button onClick={notify} className={s.btn}>
-                      <img src="/public/bag 1.svg" alt="bag" />
+                      <img src="/bag 1.svg" alt="bag" />
                     </button>
                   </div>
                 </div>
