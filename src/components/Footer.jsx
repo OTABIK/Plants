@@ -1,9 +1,31 @@
 import { Link } from "react-router-dom";
 import s from "./Footer.module.css";
 import { toast } from "react-toastify/unstyled";
+import { register } from "swiper/element";
+import axios from "axios";
 
 const Footer = () => {
   const notify = () => toast("Your Plant was kept");
+
+  const sendInfoTelegram = (data) => {
+    const token = import.meta.evn.VITE_TELEGRAM_TOKEN;
+    const chatId = import.meta.evn.VITE_TELEGRAM_CHAT_ID;
+    const urlTelegram = `https://api.telegram.org/bot${token}/sendMessage`;
+
+    const message = `email: ${data.email}`;
+
+    try {
+      axios.post(urlTelegram, {
+        chat_id: chatId,
+        text: message,
+      });
+
+      toast.success("Your are Subscribed ");
+    } catch (error) {
+      console.log(error);
+      toast.error("Error");
+    }
+  };
 
   return (
     <footer>
@@ -38,7 +60,25 @@ const Footer = () => {
             <h2 className={s.title}>For Every Update.</h2>
 
             <form className={s.email}>
-              <input className={s.inp} placeholder="Enter Email" type="email" />
+              <input
+                {...register("email", {
+                  required: {
+                    value: true,
+                    message: "This email is required",
+                  },
+                  minLength: {
+                    value: 3,
+                    message: "The min length is 3",
+                  },
+                  maxLength: {
+                    value: 40,
+                    message: "The max length is 40",
+                  },
+                })}
+                className={s.inp}
+                placeholder="Enter Email"
+                type="email"
+              />
               <button type="submit" className={s.button}>
                 Subscribe
               </button>

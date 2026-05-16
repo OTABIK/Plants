@@ -46,21 +46,5 @@
           0 100px 80px 0 rgba(0, 0, 0, 0.36);
       }
     }
-
-    .arrowBox {
-      display: flex;
-      gap: 43px;
-      background: none;
-
-      .arrow {
-        background: none;
-
-        cursor: pointer;
-      }
-
-      .arrow:nth-of-type(1) {
-        transform: rotate(180deg);
-      }
-    }
   }
 }

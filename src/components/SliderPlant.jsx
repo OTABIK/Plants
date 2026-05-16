@@ -1,15 +1,6 @@
 import s from "./SliderPlant.module.css";
-// import { Navigation } from "swiper/modules";
-import { useRef } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import Swiper from "swiper";
-// import { SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper/modules";
-// import { useRef } from "react";
 
-// import { useRef } from "react";
-// import { Navigation } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef } from "react";
 
 const plantCard = [
   {
@@ -19,21 +10,6 @@ const plantCard = [
     text: "Calathea plant",
     button: "Buy Now",
   },
-  // {
-  //   id: 2,
-  //   image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
-  //   title: "Trendy House Plant",
-  //   text: "Calathea plant",
-  //   button: "Buy Now",
-  // },
-
-  // {
-  //   id: 3,
-  //   image: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
-  //   title: "Trendy House Plant",
-  //   text: "Calathea plant",
-  //   button: "Buy Now",
-  // },
 ];
 
 const SliderPlant = () => {

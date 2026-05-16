@@ -56,8 +56,11 @@
       max-width: clamp(3.125rem, 1.146rem + 9.9vw, 12.563rem);
       width: 100%;
       display: flex;
+      align-items: center;
+      justify-content: center;
       gap: clamp(1rem, 0.436rem + 2.82vw, 3.688rem);
       flex-wrap: wrap;
+      padding-top: 30px;
 
       .icons {
         cursor: pointer;

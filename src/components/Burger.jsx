@@ -26,9 +26,6 @@ const Burger = () => {
         <Link className={s.link} to={"/More"}>
           More
         </Link>
-        <Link className={s.link} to={"/Contact"}>
-          Contact
-        </Link>
       </div>
     </div>
   );

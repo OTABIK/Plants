@@ -26,7 +26,7 @@ const TopSelling = () => {
     },
     {
       id: 3,
-      img: "//Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+      img: "/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
       title: "Calathea plant",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       cost: "Rs. 359/-",

@@ -24,7 +24,7 @@ const Hero = () => {
               <a
                 className={s.playBtn}
                 target="_blank"
-                href="https://memepedia.ru/ebat-ty-lox/"
+                href="https://youtu.be/5Obh7x6J4Lg"
               >
                 <img className={s.imgBtn} src="/Polygon 2.svg" alt="Polygon" />
                 <p className={s.liveDemo}>Live Demo...</p>

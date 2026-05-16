@@ -1,7 +1,8 @@
 import s from "./Card02.module.css";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 const Card02 = () => {
   const BestBuys = [
@@ -46,7 +47,15 @@ const Card02 = () => {
 
   return (
     <section className={s.card02}>
-      <Swiper spaceBetween={20} className={s.mySwiper}>
+      <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        loop={true}
+        navigation={true}
+        modules={[Navigation]}
+        spaceBetween={20}
+        className={s.mySwiper}
+        modules={[Autoplay]}
+      >
         {BestBuys.map((card) => (
           <SwiperSlide key={card.id} className={s.bestCard}>
             <div className={s.cardBox}>
@@ -62,6 +71,20 @@ const Card02 = () => {
             </div>
           </SwiperSlide>
         ))}
+        <button className={s.arrowBox}>
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className={s.arrow}
+          >
+            <img src="/right-arrow 3.svg" alt="left" />
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className={s.arrow}
+          >
+            <img src="/right-arrow 2.svg" alt="right" />
+          </button>
+        </button>
       </Swiper>
     </section>
   );

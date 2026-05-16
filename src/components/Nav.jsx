@@ -28,12 +28,6 @@ const Nav = () => {
           </Link> */}
         </div>
         <div className={s.more}>
-          <Link className={s.icons} to={"/"}>
-            <img src="/search-interface-symbol 1.svg" alt="search" />
-          </Link>
-          <Link className={s.icons} to={"/Contact"}>
-            <img src="/bag 1.svg" alt="search" />
-          </Link>
           <img
             className={s.icons}
             src="/Group 3.svg"

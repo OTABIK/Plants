@@ -32,6 +32,7 @@
       right: 20px;
       cursor: pointer;
       transition: 0.5s;
+      padding-top: 40px;
 
       &:hover {
         transform: rotate(90deg);
