@@ -16,7 +16,7 @@
     gap: 70px;
 
     .boxTitle {
-      max-width:578px;
+      max-width: 578px;
       width: 100%;
       height: 112px;
       display: flex;
@@ -37,7 +37,6 @@
         font-weight: 600;
         font-size: clamp(1.875rem, 1.547rem + 1.64vw, 3.438rem);
         color: #fff;
-     
       }
     }
 
@@ -48,26 +47,27 @@
       max-height: 526px;
       align-items: center;
       justify-content: space-between;
-      gap: clamp(3rem, 0.772rem + 11.14vw, 13.625rem);
+      gap: clamp(0.625rem, -2.101rem + 13.63vw, 13.625rem);
       border-radius: clamp(3.125rem, 1.801rem + 6.62vw, 9.438rem);
       backdrop-filter: blur(10px);
       background: rgba(255, 255, 255, 0.05);
       border: #ffffff67 solid 2px;
 
-      @media (max-width: 500px) {
+      @media (max-width: 768px) {
         flex-direction: column;
         max-height: none;
+        gap: 1px;
       }
 
       .img {
-        width: 651px;
-        height: clamp(23.25rem, 18.008rem + 26.21vw, 48.25rem);
+        width: clamp(23.25rem, 18.008rem + 26.21vw, 48.25rem);
+        height: clamp(31.25rem, 28.209rem + 15.2vw, 45.75rem);
 
         /* position: absolute;
         right: 900px; */
       }
       .infBox {
-        max-width: 742px;
+        max-width: clamp(31.25rem, 28.078rem + 15.86vw, 46.375rem);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -80,7 +80,7 @@
           color: #fff;
         }
         .infBlock {
-          max-width: 742px;
+          max-width: clamp(31.25rem, 28.078rem + 15.86vw, 46.375rem);
           width: 100%;
           font-weight: 600;
           font-size: clamp(0.938rem, 0.911rem + 0.13vw, 1.063rem);
@@ -150,11 +150,11 @@
       border: #ffffff67 solid 2px;
       flex-direction: row-reverse;
 
-      @media (max-width: 700px) {
+      @media (max-width: 768px) {
         display: none;
       }
 
-      @media (max-width: 500px) {
+      @media (max-width: 768px) {
         flex-direction: column;
         max-height: none;
       }
@@ -164,7 +164,7 @@
         height: clamp(23.25rem, 18.008rem + 26.21vw, 48.25rem);
       }
       .infBox {
-        max-width: 742px;
+        max-width: clamp(31.25rem, 28.078rem + 15.86vw, 46.375rem);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -177,7 +177,7 @@
           color: #fff;
         }
         .infBlock {
-          max-width: 742px;
+          max-width: clamp(31.25rem, 28.078rem + 15.86vw, 46.375rem);
           width: 100%;
           font-weight: 600;
           font-size: 15px;

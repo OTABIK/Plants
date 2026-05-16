@@ -3,7 +3,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 10px;
-
   .container {
     max-width: 2619px;
     width: 100%;
@@ -46,13 +45,15 @@
     }
 
     .mySwiper {
-      max-width: 2619px;
+      max-width: 1619px;
       width: 100%;
       display: flex;
       gap: 100px;
       justify-content: center;
       align-items: center;
       cursor: grab;
+      @media (max-width: 768px) {
+      }
 
       .divCard {
         /* max-width: clamp(30rem, 29.581rem + 2.1vw, 32rem);
@@ -70,6 +71,11 @@
         gap: 30px;
         background-color: #35442b;
         padding: 51px 26px;
+
+        @media (max-width: 768px) {
+          justify-content: center;
+          align-items: center;
+        }
 
         /* .img {
           width: 459px;

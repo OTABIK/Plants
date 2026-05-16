@@ -133,29 +133,29 @@ const TopSelling = () => {
 
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
+          loop={true}
           className={s.mySwiper}
           slidesPerView={3}
-          pagination={{ clickable: true }}
           autoplay={{
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: false,
           }}
           breakpoints={{
-            425: {
+            375: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 60,
             },
             425: {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            800: {
+            768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 130,
             },
-            1419: {
+            1440: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 50,
             },
           }}
           modules={[Autoplay, Pagination]}
