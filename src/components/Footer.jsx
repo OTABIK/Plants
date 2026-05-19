@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
 import s from "./Footer.module.css";
-import { toast } from "react-toastify/unstyled";
-import { register } from "swiper/element";
 import axios from "axios";
+import { toast } from "react-toastify";
+import { useForm } from "react-hook-form";
 
 const Footer = () => {
   const notify = () => toast("Your Plant was kept");
 
+  const {
+    register,
+    handleSubmit,
+    formState: { error },
+  } = useForm();
+
   const sendInfoTelegram = (data) => {
-    const token = import.meta.evn.VITE_TELEGRAM_TOKEN;
-    const chatId = import.meta.evn.VITE_TELEGRAM_CHAT_ID;
+    const token = import.meta.env.VITE_TELEGRAM_TOKEN;
+    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
     const urlTelegram = `https://api.telegram.org/bot${token}/sendMessage`;
 
     const message = `email: ${data.email}`;
@@ -26,6 +32,8 @@ const Footer = () => {
       toast.error("Error");
     }
   };
+
+  const onSubmit = (data) => sendInfoTelegram(data);
 
   return (
     <footer>
@@ -59,7 +67,7 @@ const Footer = () => {
           <div className={s.box_3}>
             <h2 className={s.title}>For Every Update.</h2>
 
-            <form className={s.email}>
+            <form onSubmit={handleSubmit(onSubmit)} className={s.email}>
               <input
                 {...register("email", {
                   required: {
